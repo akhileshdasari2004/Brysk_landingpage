@@ -9,49 +9,49 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "PureLanding - Beautiful Shadcn UI Landing Page",
+  title: "Brysk - AI-Powered Autonomous Retail Solutions",
   description:
-    "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+    "Brysk's AI-powered autonomous retail solutions transforming small-format retail into smart, autonomous, staff-free stores that work 24/7.",
   keywords: [
-    "PureLanding",
-    "PureLanding Landing Page",
-    "PureLanding Landing Page Template",
-    "PureLanding Page",
-    "Shadcn UI Landing Page",
-    "Shadcn UI Blocks",
-    "Shadcn UI",
-    "Landing Page",
-    "Tailwind CSS Landing Page",
-    "Beautiful Shadcn UI Landing Page",
-    "Next.js 15 Landing Page",
-    "Simple Landing Page",
-    "Landing Page Template",
-    "Landing Page Design",
+    "Brysk",
+    "AI Retail",
+    "Autonomous Retail",
+    "Smart Stores",
+    "AI-Powered Retail",
+    "Autonomous Stores",
+    "Retail Technology",
+    "AI Solutions",
+    "Retail Automation",
+    "Smart Retail",
+    "Autonomous Shopping",
+    "Retail Innovation",
+    "AI Technology",
+    "Retail Transformation",
   ],
   openGraph: {
     type: "website",
-    siteName: "PureLanding",
+    siteName: "Brysk",
     locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "PureLanding - Beautiful Shadcn UI Landing Page",
+    url: "https://brysk-landing-page.vercel.app",
+    title: "Brysk - AI-Powered Autonomous Retail Solutions",
     description:
-      "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
+      "Brysk's AI-powered autonomous retail solutions transforming small-format retail into smart, autonomous, staff-free stores that work 24/7.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "PureLanding Preview",
+        alt: "Brysk AI Retail Solutions",
       },
     ],
   },
   authors: [
     {
-      name: "Akash Moradiya",
-      url: "https://shadcnui-blocks.com",
+      name: "Akhil Dasari",
+      url: "https://github.com/akhileshdasari2004",
     },
   ],
-  creator: "Akash Moradiya",
+  creator: "Akhil Dasari",
   icons: [
     {
       rel: "icon",

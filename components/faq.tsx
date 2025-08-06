@@ -5,44 +5,29 @@ import {
   Truck,
   Undo2,
   UserRoundCheck,
+  Building,
+  Users,
+  CheckCircle,
 } from "lucide-react";
 
 const faq = [
   {
-    icon: Undo2,
-    question: "What is your return policy?",
+    icon: CheckCircle,
+    question: "Proof of Concept",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "Over 1 million items autonomously checked out across North American deployments—offices, universities, hotels—demonstrating scale and reliability.",
   },
   {
-    icon: Route,
-    question: "How do I track my order?",
+    icon: Building,
+    question: "Formats & Use Cases",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "Brysk adapts to diverse environments: Store-in-store, Micromarkets, Gyms, Transit hubs, Residential lobbies, Hotels, Campuses, Warehouses, Healthcare facilities.",
   },
   {
-    icon: Truck,
-    question: "Do you ship internationally?",
+    icon: Users,
+    question: "Who It’s For?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
-  },
-  {
-    icon: BadgeDollarSign,
-    question: "What payment methods do you accept?",
-    answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
-  },
-  {
-    icon: ShieldCheck,
-    question: "What if I receive a damaged item?",
-    answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
-  },
-  {
-    icon: UserRoundCheck,
-    question: "How can I contact customer support?",
-    answer:
-      "Reach out via email at support@example.com or call us at 1-800-123-4567 for assistance with any inquiries.",
+      "Entrepreneurs launching autonomous stores, property owners monetizing unused spaces, CPG brands testing new retail sites, organizations (universities, offices, hotels, hospitals) enhancing amenities with smart retail.",
   },
 ];
 
@@ -53,13 +38,12 @@ const FAQ = () => {
       className="min-h-screen flex items-center justify-center px-6 py-12 xs:py-20"
     >
       <div className="max-w-(--breakpoint-lg)">
-        <h2 className="text-3xl xs:text-4xl md:text-5xl leading-[1.15]! font-bold tracking-tight text-center">
-          Frequently Asked Questions
+        <h2 className="text-3xl xs:text-4xl md:text-5xl leading-[1.15]! font-bold tracking-tight text-center mb-4">
+          Brysk in Action
         </h2>
-        <p className="mt-3 xs:text-lg text-center text-muted-foreground">
-          Quick answers to common questions about our products and services.
+        <p className="mt-3 xs:text-lg text-center text-muted-foreground mb-10">
+          Real-world proof, flexible deployments, and a solution for every operator.
         </p>
-
         <div className="mt-12 grid md:grid-cols-2 bg-background rounded-xl overflow-hidden outline outline-[1px] outline-border outline-offset-[-1px]">
           {faq.map(({ question, answer, icon: Icon }) => (
             <div key={question} className="border p-6 -mt-px -ml-px">

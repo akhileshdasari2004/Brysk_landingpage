@@ -73,9 +73,22 @@ const Pricing = () => {
   return (
     <div
       id="pricing"
-      className="flex flex-col items-center justify-center py-12 xs:py-20 px-6"
+      className="relative flex flex-col items-center justify-center py-12 xs:py-20 px-6 overflow-hidden"
+      style={{
+        backgroundImage: "url('/dark-black-light-purple-liquid-background-smooth-wave-glossy-look_657540-83.avif')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
     >
-      <h1 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center tracking-tight">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
+      
+      {/* Content */}
+      <div className="relative z-10 w-full">
+        {/* Glass effect container */}
+        <div className="backdrop-blur-md bg-white/30 dark:bg-black/40 rounded-2xl p-8 border border-white/30 dark:border-white/20 shadow-2xl">
+      <h1 className="text-3xl xs:text-4xl md:text-5xl font-bold text-center tracking-tight text-white mb-2">
         Pricing
       </h1>
       <Tabs
@@ -83,11 +96,11 @@ const Pricing = () => {
         onValueChange={setSelectedBillingPeriod}
         className="mt-8"
       >
-        <TabsList className="h-11 px-1.5 rounded-full bg-primary/5">
-          <TabsTrigger value="monthly" className="py-1.5 rounded-full">
+        <TabsList className="h-11 px-1.5 rounded-full bg-white/20 dark:bg-gray-800 backdrop-blur-md">
+          <TabsTrigger value="monthly" className="py-1.5 rounded-full text-white dark:text-white">
             Monthly
           </TabsTrigger>
-          <TabsTrigger value="yearly" className="py-1.5 rounded-full">
+          <TabsTrigger value="yearly" className="py-1.5 rounded-full text-white dark:text-white">
             Yearly (Save {YEARLY_DISCOUNT}%)
           </TabsTrigger>
         </TabsList>
@@ -96,8 +109,8 @@ const Pricing = () => {
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className={cn("relative border rounded-xl p-6 bg-background/50", {
-              "border-[2px] border-primary bg-background py-10": plan.isPopular,
+            className={cn("relative border rounded-xl p-6 bg-white/40 dark:bg-white/20 backdrop-blur-md border-white/40 dark:border-white/30 shadow-lg", {
+              "border-[2px] border-primary bg-white/50 dark:bg-white/30 backdrop-blur-md py-10 shadow-xl": plan.isPopular,
             })}
           >
             {plan.isPopular && (
@@ -105,17 +118,17 @@ const Pricing = () => {
                 Most Popular
               </Badge>
             )}
-            <h3 className="text-lg font-medium">{plan.name}</h3>
-            <p className="mt-2 text-4xl font-bold">
+            <h3 className="text-lg font-semibold text-white dark:text-white">{plan.name}</h3>
+            <p className="mt-2 text-4xl font-bold text-white dark:text-white">
               $
               {selectedBillingPeriod === "monthly"
                 ? plan.price
                 : plan.price * ((100 - YEARLY_DISCOUNT) / 100)}
-              <span className="ml-1.5 text-sm text-muted-foreground font-normal">
+              <span className="ml-1.5 text-sm text-gray-200 dark:text-gray-300 font-normal">
                 /month
               </span>
             </p>
-            <p className="mt-4 font-medium text-muted-foreground">
+            <p className="mt-4 font-medium text-gray-200 dark:text-gray-200">
               {plan.description}
             </p>
 
@@ -130,12 +143,12 @@ const Pricing = () => {
             <ul className="space-y-2">
               {plan.features.map((feature) => (
                 <li key={feature.title} className="flex items-start gap-1.5">
-                  <CircleCheck className="h-4 w-4 mt-1 text-green-600" />
-                  {feature.title}
+                  <CircleCheck className="h-4 w-4 mt-1 text-green-400 dark:text-green-400" />
+                  <span className="text-white dark:text-gray-200 font-medium">{feature.title}</span>
                   {feature.tooltip && (
                     <Tooltip>
                       <TooltipTrigger className="cursor-help">
-                        <CircleHelp className="h-4 w-4 mt-1 text-gray-500" />
+                        <CircleHelp className="h-4 w-4 mt-1 text-gray-300 dark:text-gray-400" />
                       </TooltipTrigger>
                       <TooltipContent>{feature.tooltip}</TooltipContent>
                     </Tooltip>
@@ -145,6 +158,8 @@ const Pricing = () => {
             </ul>
           </div>
         ))}
+        </div>
+      </div>
       </div>
     </div>
   );

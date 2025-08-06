@@ -7,57 +7,39 @@ import React, { ComponentProps } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    company: "TechCorp",
+    name: "Alex Morgan",
+    designation: "Office Manager",
+    company: "Downtown Offices",
     testimonial:
-      "This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+      "Brysk provides 24/7 access to essentials for our busy professionals. The seamless checkout experience is a game changer!",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     id: 2,
-    name: "Sophia Lee",
-    designation: "Data Analyst",
-    company: "InsightTech",
+    name: "Priya Patel",
+    designation: "Hotel Operations Director",
+    company: "CityStay Hotels",
     testimonial:
-      "This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
-    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Our guests love the convenience of shopping any time, day or night. Brysk has truly enhanced our guest experience.",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "UX Designer",
-    company: "DesignPro",
+    name: "Jordan Lee",
+    designation: "Campus Services Lead",
+    company: "Metro University",
     testimonial:
-      "An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry.",
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+      "Brysk supports student life with accessible retail solutions across campus. It's reliable, smart, and easy to use.",
+    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "Marketing Specialist",
-    company: "BrandBoost",
+    name: "Emily Chen",
+    designation: "Property Manager",
+    company: "Urban Living Residences",
     testimonial:
-      "I've seen a significant improvement in our team's productivity since we started using this service.",
-    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    id: 5,
-    name: "Daniel Martinez",
-    designation: "Full-Stack Developer",
-    company: "CodeCrafters",
-    testimonial:
-      "The best investment we've made! The support team is also super responsive and helpful.",
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    id: 6,
-    name: "Jane Smith",
-    designation: "Product Manager",
-    company: "InnovateX",
-    testimonial:
-      "The user experience is top-notch! The interface is clean, intuitive, and easy to navigate.",
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
+      "We’ve unlocked new revenue streams by monetizing our lobby space. Brysk’s support and technology are top-notch!",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
   },
 ];
 

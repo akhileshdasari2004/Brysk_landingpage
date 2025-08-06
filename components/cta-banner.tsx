@@ -26,20 +26,22 @@ export default function CTABanner() {
           )}
         />
         <div className="relative z-0 flex flex-col gap-3">
-          <h3 className="text-3xl md:text-4xl font-semibold">
-            Ready to Elevate Your Experience?
+          <h3 className="text-3xl md:text-4xl font-semibold text-center">
+            Ready to launch your autonomous retail program?
           </h3>
-          <p className="mt-2 text-base md:text-lg">
-            Take your workflow to the next level with Shadcn UI Blocks. Sign up
-            today and start exploring!
+          <p className="mt-2 text-base md:text-lg text-center">
+            Let’s build the future of retail—together.
           </p>
         </div>
-        <div className="relative z-0 mt-14 flex flex-col sm:flex-row gap-4">
-          <Button size="lg">
-            Get Started <ArrowUpRight className="h-5! w-5!" />
+        <div className="relative z-0 mt-14 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button size="lg" className="rounded-full bg-primary text-primary-foreground">
+            Get Started
           </Button>
-          <Button size="lg" variant="outline">
-            Discover More <Forward className="h-5! w-5!" />
+          <Button size="lg" variant="outline" className="rounded-full border-primary text-primary">
+            Talk to Sales
+          </Button>
+          <Button size="lg" variant="outline" className="rounded-full border-primary text-primary">
+            Become an Operator
           </Button>
         </div>
       </div>
