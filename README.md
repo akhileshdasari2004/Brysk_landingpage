@@ -2,13 +2,7 @@
 
 A modern, responsive landing page for Brysk's AI-powered autonomous retail solutions, built with Next.js, Tailwind CSS, and Shadcn UI.
 
-## Demo
 
-[Live Demo](https://brysk-landing-page.vercel.app/)
-
-## Preview
-
-![Preview](./public/preview.png)
 
 ## Features
 
